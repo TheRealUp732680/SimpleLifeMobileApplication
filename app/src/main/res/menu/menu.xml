@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.up732680.simplelife.SimpleProfile">
+    <item
+        android:id="@+id/menu"
+        android:background="@color/pure"
+        android:title="@string/menu_name"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings_name"
+        android:background="@color/pure"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profile_name"
+        android:background="@color/pure"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/calendar"
+        android:title="@string/calendar_name"
+        android:background="@color/pure"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/schedule"
+        android:title="@string/schedule_name"
+        android:background="@color/pure"
+        app:showAsAction="never"/>
+
+</menu>

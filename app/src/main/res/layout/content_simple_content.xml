@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context="com.example.up732680.simplelife.SimpleLogIn">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/software"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="77dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:src="@drawable/logon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/app_bar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/software"
+        android:layout_width="251dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="73dp"
+        android:drawableLeft="@drawable/logo"
+        android:drawableRight="@drawable/logo"
+        android:text="Software Egineering"
+        android:textColor="@color/pure"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+    <TextView
+        android:id="@+id/units"
+        android:layout_width="36dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="3dp"
+        android:text="Units:"
+        android:textColor="@color/pure"
+        app:layout_constraintBottom_toTopOf="@+id/ase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/software" />
+
+    <TextView
+        android:id="@+id/ase"
+        android:layout_width="321dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginStart="20dp"
+        android:drawableLeft="@mipmap/greendot"
+        android:text="U21280-17YR Advanced Software Engineering (ASE) (2017)"
+        android:textColor="@color/pure"
+        app:layout_constraintBottom_toTopOf="@+id/nenga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nenga"
+        android:layout_width="331dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginStart="20dp"
+        android:drawableLeft="@mipmap/greendot"
+        android:text="U25352-17YR Neural Networks And Genetic Algorithms (NENGA) (2017)"
+        android:textColor="@color/pure"
+        app:layout_constraintBottom_toTopOf="@+id/syssec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/syssec"
+        android:layout_width="292dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="20dp"
+        android:drawableLeft="@mipmap/greendot"
+        android:text="U23826-17YR System Security (SYSSEC) (2017)"
+        android:textColor="@color/pure"
+        app:layout_constraintBottom_toTopOf="@+id/rass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/rass"
+        android:layout_width="303dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="20dp"
+        android:drawableLeft="@mipmap/greendot"
+        android:text="U21288-17YR Reliable And Secure Systems (RASS) (2017)"
+        android:textColor="@color/pure"
+        app:layout_constraintBottom_toTopOf="@+id/fyp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fyp"
+        android:layout_width="322dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="20dp"
+        android:drawableLeft="@mipmap/greendot"
+        android:text="U21287-17YR, U22508-17YR, U24739-17YR Final Year Projects (PJE40, PJS40 and PJE) (2017)"
+        android:textColor="@color/pure"
+        app:layout_constraintBottom_toTopOf="@+id/robotic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/robotic"
+        android:layout_width="294dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="144dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="21dp"
+        android:drawableLeft="@mipmap/greendot"
+        android:text="U25766-17YR Computing for Robotics (COMROB) (2017)"
+        android:textColor="@color/pure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

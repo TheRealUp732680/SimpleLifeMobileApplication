@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure"
+    tools:context="com.example.up732680.simplelife.SimpleHome">
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="263dp"
+        android:layout_height="95dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:src="@drawable/logowithname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profilelogo"
+        android:layout_width="98dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="profileb"
+        android:src="@drawable/profilelogo"
+        app:layout_constraintBottom_toTopOf="@+id/schedulelogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+    <ImageView
+        android:id="@+id/contentlogo"
+        android:layout_width="98dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:onClick="contentb"
+        android:src="@drawable/content"
+        app:layout_constraintBottom_toTopOf="@+id/aboutuslogo"
+        app:layout_constraintStart_toEndOf="@+id/profilelogo"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+    <ImageView
+        android:id="@+id/settinglogo"
+        android:layout_width="98dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:onClick="settingb"
+        app:layout_constraintBottom_toTopOf="@+id/calendarlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/contentlogo"
+        app:layout_constraintTop_toBottomOf="@+id/Logo"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/settinglogo" />
+
+    <ImageView
+        android:id="@+id/schedulelogo"
+        android:layout_width="96dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginStart="16dp"
+        android:clickable="true"
+        android:onClick="scheduleb"
+        app:layout_constraintBottom_toTopOf="@+id/reminderlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/schedulelogo" />
+
+    <ImageView
+        android:id="@+id/aboutuslogo"
+        android:layout_width="106dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginStart="26dp"
+        android:clickable="true"
+        android:onClick="aboutusb"
+        app:layout_constraintBottom_toTopOf="@+id/ptwlogo"
+        app:layout_constraintStart_toEndOf="@+id/schedulelogo"
+        app:srcCompat="@drawable/aboutuslogo" />
+
+    <ImageView
+        android:id="@+id/calendarlogo"
+        android:layout_width="88dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="61dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="23dp"
+        android:clickable="true"
+        android:onClick="calenderb"
+        app:layout_constraintBottom_toTopOf="@+id/meetinglogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/aboutuslogo"
+        app:srcCompat="@drawable/calendarlogo" />
+
+    <ImageView
+        android:id="@+id/reminderlogo"
+        android:layout_width="98dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginStart="16dp"
+        android:clickable="true"
+        android:onClick="reminderb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/reminderlogo" />
+
+    <ImageView
+        android:id="@+id/ptwlogo"
+        android:layout_width="114dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:onClick="ptwb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reminderlogo"
+        app:srcCompat="@drawable/ptwlogo" />
+
+    <ImageView
+        android:id="@+id/meetinglogo"
+        android:layout_width="101dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="46dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="6dp"
+        android:clickable="true"
+        android:onClick="meetingb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ptwlogo"
+        app:srcCompat="@drawable/meetinglogo" />
+
+
+</android.support.constraint.ConstraintLayout>
